@@ -2,8 +2,8 @@ package cat.ilg;
 
 public class Persona{
 
-    Private String DNI;
-    Private String Nom;
+    private String DNI;
+    private String Nom;
 
 
 }
