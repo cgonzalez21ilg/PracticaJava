@@ -7,3 +7,17 @@ public class Persona{
 
 
 }
+
+public void canviarNom () {return Nom}
+
+public void assigarDNI () {return DNI}
+
+
+public String obtenirDades
+
+    public void posarNota(double v) {
+    }
+
+        if main-->Nom+DNI
+        } else  throw exception null;
+
