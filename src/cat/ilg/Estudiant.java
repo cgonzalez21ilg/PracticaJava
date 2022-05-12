@@ -14,7 +14,7 @@ public class Estudiant extends Persona {
       notes.add(nota);
     }
     else{
-      System.out.println("La nota no es correcta");
+      System.out.println("Nota incorrecta");
     }
   }
   public String obtenirNotes (){
@@ -51,11 +51,11 @@ public class Estudiant extends Persona {
     return max;
   }
   public String obtenirDades () throws Exception {
-    //vull que em doni el mateix que persona + la nota
-    if (super.obtenirDades() == "Dades de la persona incompletes") {
-      throw new Exception("Dades de la persona incompletes");
+
+    if (super.obtenirDades() == "Datos incompletos") {
+      throw new Exception("Datos incompletos");
     } else {
-      return super.obtenirDades() + " te un " + obtenirNotes() + "la mitjana es " + obtenirMitjana() + " la nota mes alta es " + obtenirMaxim() + " i la mes baixa " + obtenirMinim();
+      return super.obtenirDades() + " tiene un " + obtenirNotes() + "la media es " + obtenirMitjana() + " la nota más alta es " + obtenirMaxim() + " y la más baja " + obtenirMinim();
     }
   }
 }
