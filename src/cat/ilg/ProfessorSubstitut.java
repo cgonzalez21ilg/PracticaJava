@@ -1,14 +1,23 @@
 package cat.ilg;
-import cat.ilg.Professor;
+import java.util.ArrayList;
+import java.util.Date;
+public class ProfessorSubstitut extends Professor{
+    private Date dataInici;
+    private Date dataFi;
 
-public class ProfessorSubstitut extends Professor {
+    //ArrayList<Persona> persones = new ArrayList<Persona>();
+    public void assignarSubstitucio(Persona persona) {
+        persones.add(persona);
+    }
+    public void dataFi(Date dataFi) {
+        this.dataFi = dataFi;
+    }
+    public void dataInici(Date dataInici) {
+        this.dataInici = dataInici;
+    }
+    public String obtenirDades() throws Exception {
+        return super.obtenirDades() + " Fecha de inicio : " + this.dataInici + " Fecha final: " + this.dataFi;
+    }
 
-    private date datainici;
-    private date dataFi;
+
 }
-public String assignarSubstitucio {
-         date datainici;
-         date dataFi;
-}
-
-public String obtenirDades()

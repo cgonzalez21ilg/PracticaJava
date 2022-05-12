@@ -1,16 +1,20 @@
 package cat.ilg;
 
-public class Professor extends Persona{
+public class Professor extends Persona {
+    public Professor (){
+    }
+    private double sou;
 
-    private double Sou;
+    public void setSou(double sou) throws Exception {
+        if (sou < 3000 && sou > 0) {
+            this.sou= sou;
+        }
 
+        else {
+            throw new Exception("El sueldo es incorrecto");
+        }
+    }
+    public String obtenirDades() throws Exception {
+        return super.obtenirDades() + " Con sueldo: " + this.sou;
+    }
 }
-
-public void canviarSou {return Sou }
-
-public String obtenirDades {
-
-    if main --> return Sou
-
-
-        } else return null

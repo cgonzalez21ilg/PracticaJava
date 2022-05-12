@@ -1,7 +1,8 @@
 package cat.ilg;
-
+import java.util.Date;
 public class Main {
     public static void main(String[] args) throws Exception {
+
         Institut ins = new Institut();
         ins.canviarNom("La Guineueta");
 
@@ -10,7 +11,7 @@ public class Main {
         profe1.assignarDni("1234");
         ins.afegirProfe(profe1);
 
-        Professor profe2 = new ProfessorSubstitut();
+        ProfessorSubstitut profe2 = new ProfessorSubstitut();
         profe2.canviarNom("Laura");
         profe2.assignarDni("8888");
         Date dataInici = new Date(2021, 11, 1);
@@ -25,5 +26,6 @@ public class Main {
         ins.afegirEstudiant(estudiant1);
 
         ins.imprimirInformacio();
+
     }
 }

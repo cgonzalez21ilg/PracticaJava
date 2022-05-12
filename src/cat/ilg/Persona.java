@@ -1,23 +1,31 @@
 package cat.ilg;
 
-public class Persona{
+public class Persona {
 
-    private String DNI;
-    private String Nom;
+    private String nom;
+    private String dni;
 
+    public Persona(){
 
-}
-
-public void canviarNom () {return Nom}
-
-public void assigarDNI () {return DNI}
-
-
-public String obtenirDades
-
-    public void posarNota(double v) {
+    }
+    public void canviarNom(String nom) {
+        this.nom = nom;
     }
 
-        if main-->Nom+DNI
-        } else  throw exception null;
-
+    public String obtenirDades() throws Exception {
+        if (this.nom == null || this.dni == null){
+            throw new Exception("Datos incompletos");
+        }
+        else {
+            return "Persona llamada " + this.nom + " con DNI " + this.dni;
+        }
+    }
+    public void assignarDni(String dni) throws Exception {
+        if (this.dni == null) {
+            this.dni = dni;
+        }
+        else {
+            throw new Exception("Esta persona tiene otro DNI ");
+        }
+    }
+}
